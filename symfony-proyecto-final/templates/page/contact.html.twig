@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="formulario-contacto contenedor">
+    <div class="informacion-contacto">
+        <h3>Contactanos</h3>
+        <p><i class="fas fa-map-marker-alt"></i>22. Castelló de la Plana</p>
+        <p><i class="fas fa-envelope"></i> chefos@gmail.com</p>
+        <p><i class="fas fa-phone-alt"></i>+34 984 483 284</p>
+        <div class="redes-sociales">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""></a><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <form class="formulario">
+        <div class="input-formulario">
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="" id="nombre">
+        </div>
+        <div class="input-formulario">
+            <label for="apellidos">Apellido</label>
+            <input type="text" placeholder="" id="apellidos">
+        </div>
+        <div class="input-formulario">
+            <label for="correo">Correo</label>
+            <input type="email" placeholder="" id="correo">
+        </div>
+        <div class="input-formulario">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" placeholder="" id="telefono">
+        </div>
+        <div class="input-formulario">
+            <label for="mensaje">Mensaje</label>
+            <textarea></textarea>
+        </div>
+        <div class="btn-formulario">
+            <input type="submit" class="btn btn-verde" value="Enviar">
+        </div>
+        
+    </form>
+</div>
+{% endblock %}
