@@ -1,0 +1,15 @@
+<div class="contenido-navegacion contenedor">
+                <div class="logo">
+                    <!--<h2>Ristorante <span class="verde">Tu</span><span>ri</span><span class="rojo">lli</span></h2>-->
+                    <img class="imagen-logo" src="./assets/img/logoChefos.png" alt="">
+                </div>
+                <nav class="navegacion ocultar">
+                     <a href="{{ path('index') }}" class="nav-item nav-link {{ (app.request.attributes.get('_route') == 'index')  ? 'active': ''}}">Inicio</a>
+                     <a href="{{ path('index') }}" class="nav-item nav-link {{ (app.request.attributes.get('_route') == 'index')  ? 'active': ''}}">Sobre Nosotros</a>
+                    <a href="{{ path('product') }}" class="nav-item nav-link {{ (app.request.attributes.get('_route') == 'product')  ? 'active': ''}}">Menús</a>    
+                    <a href="{{ path('index') }}" class="nav-item nav-link {{ (app.request.attributes.get('_route') == 'index')  ? 'active': ''}}">Nuestro Equipo</a>
+                    <a href="{{ path('contact') }}" class="nav-item nav-link {{ (app.request.attributes.get('_route') == 'contact')  ? 'active': ''}}">Contacto</a>                </nav>
+                <div class="hamburguesa">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
