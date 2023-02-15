@@ -14,7 +14,7 @@
         </div>
         <div class="imagenes-nosotros">
             <div class="imagen1">
-                <img src="./assets/img/cooking-1835369_1920.jpg" alt="">
+                <img src="./img/cooking-1835369_1920.jpg" alt="">
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
         </div>-->
         <div class="platillos">
             <div class="platillo" data-platillo="ensalada">
-                <img src="assets/img/beef-2509104_1920.jpg" alt="ensalada">
+                <img src="./img/beef-2509104_1920.jpg" alt="ensalada">
                 <h2>Menú Meatua</h2>
                 <p>Menú compuesto por nuestro mejor plato de carne de vacuno.</p>
                 <div class="precio">
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="platillo" data-platillo="ensalada">
-                <img src="assets/img/burgers-1976198_1920.jpg" alt="ensalada">
+                <img src="./img/burgers-1976198_1920.jpg" alt="ensalada">
                 <h2>Menú Goloso</h2>
                 <p>Menú compuesto por nuestra mejor hamburguesa de carne de cerdo.</p>
                 <div class="precio">
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="platillo" data-platillo="ensalada">
-                <img src="assets/img/salad-2068210_1920.jpg" alt="ensalada">
+                <img src="./img/salad-2068210_1920.jpg" alt="ensalada">
                 <h2>Menú Verde</h2>
                 <p>Menú compuesto por nuestra mejor ensalada fresca.</p>
                 <div class="precio">
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="platillo" data-platillo="pasta">
-                <img src="assets/img/seafood-2408849_1920.jpg" alt="pasta">
+                <img src="./img/seafood-2408849_1920.jpg" alt="pasta">
                 <h2>Menú Azul</h2>
                 <p>Menú compuesto por nuestro mejor plato de pulpo a la gallega.</p>
                 <div class="precio">
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="platillo" data-platillo="pasta">
-                <img src="assets/img/cake-1971552_1920.jpg" alt="pasta">
+                <img src="./img/cake-1971552_1920.jpg" alt="pasta">
                 <h2>Menú Sugar</h2>
                 <p>Menú compuesto por nuestro postre tiramisu de 5 estrellas.</p>
                 <div class="precio">
@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="platillo" data-platillo="pasta">
-                <img src="assets/img/pasta-3805772_1920.jpg" alt="pasta">
+                <img src="./img/pasta-3805772_1920.jpg" alt="pasta">
                 <h2>Menú Pastaso</h2>
                 <p>Menú compuesto por nuestro plato de spaguetti.</p>
                 <div class="precio">
@@ -121,21 +121,23 @@
         </div>-->
         <div class="platillos">
             <div class="platillo2" data-platillo="ensalada">
-                <img src="assets/img/chef1.jpg" alt="ensalada">
+                <img src="./img/chef1.jpg" alt="ensalada">
                 <h1>Chef Antonio</h1>
                 <p>Menú compuesto por nuestro mejor plato de carne de vacuno.</p>
             </div>
             <div class="platillo2" data-platillo="ensalada">
-                <img src="assets/img/chef2.jpg" alt="ensalada">
+                <img src="./img/chef2.jpg" alt="ensalada">
                 <h1>Chef Laura</h1>
                 <p>Menú compuesto por nuestra mejor hamburguesa de carne de cerdo.</p>
             </div>
             <div class="platillo2" data-platillo="ensalada">
-                <img src="assets/img/chef3.jpg" alt="ensalada">
+                <img src="./img/chef3.jpg" alt="ensalada">
                 <h1>Chef Andrea</h1>
             </div>
         </div>
     </section>
+
+    {{ render(controller('App\\Controller\\PageController::teamTemplate')) }}
 
 
 {% endblock %}

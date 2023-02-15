@@ -1,0 +1,16 @@
+    <!-- Team Start -->
+        <div class="chef contenedor">
+          <h2>Nuesto Equipo de Chefs</h2>
+            <div class="platillos">
+             {% for teamMember in team %}
+                <div class="platillo2">
+                        <img src="{{ asset('img/' ~ teamMember.photo) }}" alt="">
+                 
+                        <h1 class="text-uppercase">{{ teamMember.name }}</h1>
+                        <p class="m-0">{{ teamMember.description }}</p>
+                
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    <!-- Team End -->

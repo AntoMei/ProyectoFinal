@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}CHEFOS {% endblock %}</title>
-    <link rel="shortcut icon" href="./assets/img/logoChefos.png">
+    <link rel="shortcut icon" href="{{asset('./img/logoChefos.png')}}">
     <script src="https://kit.fontawesome.com/283335a286.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
             {{ include ('partials/_navigation.html.twig')}}
         </div>
         <div class="contenido-header">
-            <img src="./assets/img/burgers-1839090.jpg" alt="">
+            <img src="./img/burgers-1839090.jpg" alt="">
             <div class="contenedor-encabezado">
                 <!--<div class="texto-encabezado">
                     <h2>QUE APROVECHE!</h2>

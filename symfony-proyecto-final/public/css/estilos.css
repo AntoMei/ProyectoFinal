@@ -461,7 +461,7 @@ img{
     flex: 0 0 calc(50% - 1rem);
 }
 .informacion-contacto{
-    background-image: url('../assets/img/iphone-658839_1920.jpg');
+    background-image: url('../img/iphone-658839_1920.jpg');
     padding: 2rem;
 }
 
