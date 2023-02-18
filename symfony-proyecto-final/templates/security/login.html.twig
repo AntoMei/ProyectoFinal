@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+
+<div class="formulario-contacto contenedor">
+    <div class="informacion-contacto">
+        <h3>Contactanos</h3>
+        <p><i class="fas fa-map-marker-alt"></i>22. Castelló de la Plana</p>
+        <p><i class="fas fa-envelope"></i> chefos@gmail.com</p>
+        <p><i class="fas fa-phone-alt"></i>+34 984 483 284</p>
+        <div class="redes-sociales">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""></a><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+
+<form method="post">
+    {% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+        <div class="mb-3">
+            You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+        </div>
+    {% endif %}
+    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="formulario-campo" autocomplete="email" required autofocus placeholder="Correo electrónico">
+    <input type="password" name="password" id="inputPassword" class="formulario-campo-nuevo" autocomplete="current-password" required placeholder="Contraseña">
+
+    <input type="hidden" name="_csrf_token"
+           value="{{ csrf_token('authenticate') }}"
+    >
+
+    {#
+        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+        See https://symfony.com/doc/current/security/remember_me.html
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" name="_remember_me"> Remember me
+            </label>
+        </div>
+    #}
+
+    <button class="boton-loguearse" type="submit">
+        Iniciar sesión
+    </button>
+</form>
+        </div>
+    </div>
+
+{% endblock %}

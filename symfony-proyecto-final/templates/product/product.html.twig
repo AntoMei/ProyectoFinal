@@ -1,6 +1,10 @@
 {% extends 'base.html.twig' %}
+{% block title %}Products{% endblock %}
 {% block body %}
-<section class="menu contenedor">
+
+{% include('product/_products.html.twig') %}
+
+<!--<section class="menu contenedor">
     <h2 class="texto-platillos">Menús populares</h2>
     <!--<div class="botones-platillos">
         <button class="todos btn btn-verde">Todos</button>
@@ -8,10 +12,10 @@
         <button class="pasta btn btn-verde">Pasta</button>
         <button class="pizza btn btn-verde">Pizza</button>
         <button class="postres btn btn-verde">Postres</button>
-    </div>-->
+    </div>
     <div class="platillos">
         <div class="platillo" data-platillo="ensalada">
-            <img src="assets/img/beef-2509104_1920.jpg" alt="ensalada">
+            <img src="./img/beef-2509104_1920.jpg" alt="ensalada">
             <h2>Menú Meatua</h2>
             <p>Menú compuesto por nuestro mejor plato de carne de vacuno.</p>
             <div class="precio">
@@ -20,7 +24,7 @@
             </div>
         </div>
         <div class="platillo" data-platillo="ensalada">
-            <img src="assets/img/burgers-1976198_1920.jpg" alt="ensalada">
+            <img src="./img/burgers-1976198_1920.jpg" alt="ensalada">
             <h2>Menú Goloso</h2>
             <p>Menú compuesto por nuestra mejor hamburguesa de carne de cerdo.</p>
             <div class="precio">
@@ -29,7 +33,7 @@
             </div>
         </div>
         <div class="platillo" data-platillo="ensalada">
-            <img src="assets/img/salad-2068210_1920.jpg" alt="ensalada">
+            <img src="./img/salad-2068210_1920.jpg" alt="ensalada">
             <h2>Menú Verde</h2>
             <p>Menú compuesto por nuestra mejor ensalada fresca.</p>
             <div class="precio">
@@ -38,7 +42,7 @@
             </div>
         </div>
         <div class="platillo" data-platillo="pasta">
-            <img src="assets/img/seafood-2408849_1920.jpg" alt="pasta">
+            <img src="./img/seafood-2408849_1920.jpg" alt="pasta">
             <h2>Menú Azul</h2>
             <p>Menú compuesto por nuestro mejor plato de pulpo a la gallega.</p>
             <div class="precio">
@@ -47,7 +51,7 @@
             </div>
         </div>
         <div class="platillo" data-platillo="pasta">
-            <img src="assets/img/cake-1971552_1920.jpg" alt="pasta">
+            <img src="./img/cake-1971552_1920.jpg" alt="pasta">
             <h2>Menú Sugar</h2>
             <p>Menú compuesto por nuestro postre tiramisu de 5 estrellas.</p>
             <div class="precio">
@@ -56,7 +60,7 @@
             </div>
         </div>
         <div class="platillo" data-platillo="pasta">
-            <img src="assets/img/pasta-3805772_1920.jpg" alt="pasta">
+            <img src="./img/pasta-3805772_1920.jpg" alt="pasta">
             <h2>Menú Pastaso</h2>
             <p>Menú compuesto por nuestro plato de spaguetti.</p>
             <div class="precio">
@@ -65,5 +69,5 @@
             </div>
         </div>
         </div>
-</section>
+</section>-->
 {% endblock %}

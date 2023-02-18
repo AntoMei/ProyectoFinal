@@ -1,0 +1,32 @@
+
+
+<h2 class="texto-platillos">Menús populares</h2>
+{% for product in products %}
+
+<section class="menu contenedor">
+
+
+<div class="platillos">
+<center>
+<div class="platillo" data-platillo="ensalada">
+            <img src="{{ asset('img/' ~ product.photo)}}">
+            <h2>{{product.name}}</h2>
+            <p>{{product.description}}</p>            
+
+            <div class="precio">
+                <p>{{product.price |number_format(2, '.', ',')}} €</p>   
+                <div class="icons">
+                <a class="btn btn-primary py-2 px-3 open-cart-product" data-id="{{product.id}}"><i class="fas fa-shopping-cart"></i></a>
+                <!--<a href="#" class="fas fa-heart"></a>-->
+                <a class="btn btn-primary py-2 px-3 open-info-product" data-id="{{product.id}}"><i class="fas fa-eye"></i></a>         
+            </div>
+            </div>  
+        </div>
+        </div>
+        </center>
+            </section>
+           
+        {% endfor %}
+ 
+
+        {% include('product/_infoProducto.html.twig') %}

@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+
+{% block body %}
+
+<div class="formulario-contacto contenedor">
+    <div class="informacion-contacto">
+        <h3>Contactanos</h3>
+        <p><i class="fas fa-map-marker-alt"></i>22. Castelló de la Plana</p>
+        <p><i class="fas fa-envelope"></i> chefos@gmail.com</p>
+        <p><i class="fas fa-phone-alt"></i>+34 984 483 284</p>
+        <div class="redes-sociales">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""></a><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+
+
+    {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.email, {'attr': {'placeholder': 'Correo Electrónico'}}) }}
+        {{ form_row(registrationForm.plainPassword, {'attr': {'placeholder': 'Contraseña'}}) }}
+        {{ form_row(registrationForm.agreeTerms) }}
+
+        <button type="submit" class="boton-registrarse">Registrarse</button>
+    {{ form_end(registrationForm) }}
+    </div>
+    </section>
+{% endblock %}
+
+  

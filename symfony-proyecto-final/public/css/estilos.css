@@ -92,10 +92,13 @@ img{
     .btn{
         font-size: 2.2rem;
     }
+
 }
+
 .bordes{
     border: 3px solid var(--blanco);
 }
+
 @media(min-width: 768px) {
     .bordes{
         border: 4px solid var(--blanco);
@@ -306,6 +309,7 @@ img{
 .texto-platillos{
     text-align: center;
     font-size: 5rem;
+    flex: 0 0 calc(33.3% - 1rem);
 }
 
 .botones-platillos{
@@ -332,13 +336,22 @@ img{
         flex-wrap:wrap;
     }
 }
+
+.product-container {
+    display: inline-block;
+    width: 49%;
+    margin: 0 1% 1% 0;
+  }
+  
 .platillo{
     flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #000000;
     padding: 2rem;
     border-radius: 5px;
     background-color: #5dffa62a;
+    margin-bottom: 40px;
 }
+
 .platillo h2{
     text-align: center;
 }
@@ -439,6 +452,7 @@ img{
     padding: 2rem;
     border-radius: 5px;
     background-color: #3061802a;
+    margin-top: 40px;
 }
 
 .formulario-contacto{
@@ -563,4 +577,103 @@ img{
     color: var(--blanco);
     padding: 2rem;
     font-size: 2rem;
+}
+
+.compra{
+    text-align: center;
+    font-size: 40px;
+    color:#00A149;
+    margin-bottom: 12rem;
+}
+
+.menu-producto {
+    width: 200px;
+}
+
+.formulario-campo {
+    padding: 1rem 1.6rem;
+    border: 1px solid #550808;
+    border-radius: 5px;
+    outline: none;
+    font-family: var(--parrafos);
+    width: auto;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.formulario-campo-nuevo {
+    padding: 1rem 1.6rem;
+    border: 1px solid #550808;
+    border-radius: 5px;
+    outline: none;
+    font-family: var(--parrafos);
+    width: auto;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.required {
+    margin-top: 20px;
+    margin-left: 40px
+}
+
+/*.boton-formulario {
+    background-color: var(--verde);
+    border: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-family: var(--parrafos);
+    width: 20%;
+    margin-left: 40px;
+    height: 20%;
+    margin-top: 30px;
+}*/
+
+#registration_form_email {
+    padding: 1rem 1.6rem;
+    border: 1px solid #550808;
+    border-radius: 5px;
+    outline: none;
+    font-family: var(--parrafos);
+    width: auto;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#registration_form_plainPassword {
+    padding: 1rem 1.6rem;
+    border: 1px solid #550808;
+    border-radius: 5px;
+    outline: none;
+    font-family: var(--parrafos);
+    width: auto;
+    margin-left: 40px;
+}
+
+
+.boton-loguearse {
+    background-color: wheat;
+    border: 1px solid #550808;
+    border: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-family: var(--parrafos);
+    margin-left: 40px;
+    width: 30%;
+    height: 15%;
+}
+
+.boton-registrarse {
+    background-color: wheat;
+    border: 1px solid #550808;
+    border: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-family: var(--parrafos);
+    margin-left: 40px;
+    width: 70%;
+    height: 20%;
+    margin-top: 20px;
 }
