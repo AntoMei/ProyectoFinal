@@ -1,7 +1,7 @@
 <div class="contenido-navegacion contenedor">
                 <div class="logo">
                     <!--<h2>Ristorante <span class="verde">Tu</span><span>ri</span><span class="rojo">lli</span></h2>-->
-                    <img class="imagen-logo" src="./img/logoChefos.png" alt="">
+                    <img class="imagen-logo" src="{{ asset('img/logoChefos.png' ) }}" alt="">
                 </div>
                 <nav class="navegacion ocultar">
                      <a href="{{ path('index') }}" class="nav-item nav-link {{ (app.request.attributes.get('_route') == 'index')  ? 'active': ''}}">Inicio</a>

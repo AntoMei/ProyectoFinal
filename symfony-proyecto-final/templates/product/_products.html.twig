@@ -1,13 +1,13 @@
 
 
 <h2 class="texto-platillos">Menús populares</h2>
-{% for product in products %}
 
 <section class="menu contenedor">
 
 
 <div class="platillos">
-<center>
+{% for product in products %}
+
 <div class="platillo" data-platillo="ensalada">
             <img src="{{ asset('img/' ~ product.photo)}}">
             <h2>{{product.name}}</h2>
@@ -22,11 +22,11 @@
             </div>
             </div>  
         </div>
+                {% endfor %}
+
         </div>
-        </center>
             </section>
            
-        {% endfor %}
  
 
         {% include('product/_infoProducto.html.twig') %}
