@@ -27,9 +27,11 @@ body{
 }
 h1,h2{
     font-family: var(--titulos);
+    font-family: 'Oswald', sans-serif;
 }
 h3, p, a{
     font-family: var(--parrafos);
+    font-family: 'Exo 2', sans-serif;
 }
 
 img{
@@ -122,6 +124,7 @@ img{
     display: inline-block;
     margin-bottom: 2rem;
     font-family: var(--parrafos);
+    font-family: 'Exo 2', sans-serif;
 }
 .btn-verde:hover{
     background-color: var(--rojo);
@@ -506,7 +509,7 @@ img{
 .input-formulario label{
     display: block;
     font-size: 2rem;
-    font-family: var(--parrafos);
+    font-family: 'Exo 2', sans-serif;
     margin-bottom: 1.5rem;
 }
 
