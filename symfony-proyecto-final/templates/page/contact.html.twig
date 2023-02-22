@@ -13,31 +13,36 @@
         </div>
     </div>
 
-    <form class="formulario">
+     <form class="formulario" id="formulario">
         <div class="input-formulario">
-            <label for="nombre">Nombre</label>
-            <input type="text" placeholder="" id="nombre">
-        </div>
+            <label>Nombre</label>
+            <input type="text" placeholder="" id="nombre" name="name">
+        </div> <br>
         <div class="input-formulario">
-            <label for="apellidos">Apellidos</label>
-            <input type="text" placeholder="" id="apellidos">
-        </div>
+            <label>Apellido</label>
+            <input type="text" placeholder="" id="apellidos" name="name2">
+        </div> <br>
         <div class="input-formulario">
-            <label for="correo">Correo</label>
-            <input type="email" placeholder="" id="correo">
-        </div>
+            <label>Correo</label>
+            <input type="email" placeholder="" id="correo" name="email">
+        </div> <br>
         <div class="input-formulario">
-            <label for="telefono">Teléfono</label>
-            <input type="tel" placeholder="" id="telefono">
-        </div>
+            <label>Teléfono</label>
+            <input type="tel" placeholder="" id="telefono" name="number">
+        </div> <br>
         <div class="input-formulario">
-            <label for="mensaje">Mensaje</label>
-            <textarea></textarea>
-        </div>
+            <label>Mensaje</label>
+            <textarea id="mensaje" name="area"></textarea>
+        </div> <br>
+        <div class="input-formulario">
+            <label>Fecha</label>
+            <input type="text" id="datepicker" name="fecha">
+        </div> <br>
         <div class="btn-formulario">
             <input type="submit" class="btn btn-verde" value="Enviar">
         </div>
         
     </form>
 </div>
+
 {% endblock %}
