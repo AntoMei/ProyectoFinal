@@ -206,7 +206,6 @@ img{
     margin-bottom: .5rem;
 }
 
-/*video*/
 .contenido-header{
     position: relative;
     background-color: #00A149;
@@ -244,10 +243,7 @@ img{
     }
 }
 
-/*video{
-    width: 100%;
-    height: 100%;
-}*/
+
 
 /*sobre nosotros*/
 .contenedor-nosotros{
